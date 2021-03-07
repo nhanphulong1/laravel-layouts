@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #d7d7db;
+}
+
+
+/* NAV-HEADER */
+.nav-header{
+    background-color: #444444;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.nav-header .nav-name{
+    float: left;
+}
+
+.nav-header .nav-name a{
+    color: #30a5ff;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.nav-header .nav-name a span{
+    color: white;
+}
+
+.nav-header .nav-admin{
+    float: right!important;
+    margin: 15px 45px;
+}
+
+.nav-header .nav-admin button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-header .nav-admin button i{
+    margin-right: 7px;
+}
+/* END NAV-HEADER */
+
+/* NAV-SIDEBAR */
+.nav-sidebar{
+    width: 16.5%;
+    background-color: white;
+    float: left;
+    height: 94vh;
+}
+
+.nav-sidebar>ul{
+    list-style: none;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.nav-sidebar ul li a{
+    text-decoration: none;
+    color: #444444;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+.nav-sidebar ul li a i{
+    margin-right: 7px;
+}
+
+.nav-sidebar ul li a:hover{
+    background-color: #30a5ff;
+}
+/* END NAV-SIDEBAR */
+
+/* NOI DUNG */
+.noidung{
+    width: 83.2%;
+    float: right;
+    background-color: white;
+    /* margin: 5px; */
+    height: 94vh;
+}
+/* END NOI DUNG */

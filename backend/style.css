@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     background-color: #444444;
     height: fit-content;
     overflow: hidden;
+    z-index: 2;
 }
 
 .nav-header .nav-name{
@@ -54,7 +56,8 @@ body{
     width: 16.5%;
     background-color: white;
     float: left;
-    height: 94vh;
+    height: 120vh;
+    overflow: hidden;
 }
 
 .nav-sidebar>ul{
@@ -85,8 +88,59 @@ body{
 .noidung{
     width: 83.2%;
     float: right;
-    background-color: white;
-    /* margin: 5px; */
     height: 94vh;
 }
+
+#tknoidung{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#tknoidung .thongke{
+    width: 22.5%;
+    margin: 10px 10px;
+    padding-top: 10px;
+}
+
+#tknoidung .thongke i{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 45px;
+    float: left;
+    color: white;
+}
+
+#tknoidung .thongke h4{
+    color: white;
+    text-align: right;
+    padding-right: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+#tknoidung .thongke p{
+    color: white;
+    text-align: right;
+    font-size: 22px;
+    padding-right: 15px;
+}
+
+#tkdonhang{
+    background-color: #4d3bf3!important;
+}
+
+#tksanpham{
+    background-color: #e55353;
+}
+
+#tkdoanhthu{
+    background-color: #2eb85c;
+}
+
+#tkbinhluan{
+    background-color: #f9b115;
+}
+
 /* END NOI DUNG */

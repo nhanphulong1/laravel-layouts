@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../vendor/bootstrap-4.6.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/DataTables/datatables.min.css"/>
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DashBoard</title>
+</head>
+<body>
+    <div class="page">
+        <div class="nav-header">
+            <div class="nav-name"><a href="#"><span>Laptop</span>-Shop</a></div>
+            
+            <div class="nav-admin">
+                <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user" aria-hidden="true"></i>Admin
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="nav-sidebar">
+                <ul>
+                    <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="product.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Quản lý Sản Phẩm</a></li>
+                    <li><a href="category.html"><i class="fa fa-th" aria-hidden="true"></i>Quản lý danh mục</a></li>
+                    <li><a href=""><i class="fa fa-file-invoice"></i>Quản lý hóa đơn</a></li>
+                    <li><a href="account.html"><i class="fa fa-id-card" aria-hidden="true"></i>Quản lý Tài Khoản</a></li>
+                    <li><a href=""><i class="fa fa-comments" aria-hidden="true"></i>Quản lý Bình luận</a></li>
+                </ul>
+            </div>
+            <div class="noidung">
+
+                <div class="row">
+                    <h2>Quản lý danh mục</h2>
+
+                    <div class="col-md-3">
+                        <h4>Thêm danh mục</h4>
+                        <form id="fraddproduct" action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="sp_name" class="label-form">Tên danh mục:</label>
+                                <input type="text" name="prod_name" class="form-control">
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Thêm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <table id="tbsanpham" width="100%" class="text-center table table-hover">
+                            <thead>
+                                <tr >
+                                    <th>STT</th>
+                                    <th>Tên danh mục</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Asus</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning">Sửa</a>
+                                        <a href="#" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Dell</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning">Sửa</a>
+                                        <a href="#" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Acer</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning">Sửa</a>
+                                        <a href="#" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>HP</td>
+                                    <td>
+                                        <a href="#" class="btn btn-warning">Sửa</a>
+                                        <a href="#" class="btn btn-danger">Xóa</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../vendor/jquery-3.6.0.min.js"></script>
+<script src="../vendor/popper.min.js"></script>
+<script src="../vendor/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../vendor/DataTables/datatables.min.js"></script>
+<script src="https://kit.fontawesome.com/ef4a4b3f41.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#tbsanpham').DataTable();
+    })
+</script>
+</html>

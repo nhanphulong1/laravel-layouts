@@ -6,6 +6,7 @@
 
 body{
     background-color: #d7d7db;
+    position: relative;
 }
 
 
@@ -56,8 +57,7 @@ body{
     width: 16.5%;
     background-color: white;
     float: left;
-    height: 120vh;
-    overflow: hidden;
+    height: 100vh;
 }
 
 .nav-sidebar>ul{
@@ -88,7 +88,8 @@ body{
 .noidung{
     width: 83.2%;
     float: right;
-    height: 94vh;
+    /* height: 94vh; */
+    overflow: hidden;
 }
 
 #tknoidung{

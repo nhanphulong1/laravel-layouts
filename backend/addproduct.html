@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../vendor/bootstrap-4.6.0-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../vendor/DataTables/datatables.min.css"/>
     <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="addsanpham.css">
     <link rel="stylesheet" href="style.css">
     <title>DashBoard</title>
 </head>
@@ -24,29 +25,130 @@
                   </div>
             </div>
         </div>
-        <div class="contain">
-            <div class="nav-sidebar">
-                <ul>
-                    <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
-                    <li><a href="product.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Quản lý Sản Phẩm</a></li>
-                    <li><a href="p"><i class="fa fa-th" aria-hidden="true"></i>Quản lý danh mục</a></li>
-                    <li><a href=""><i class="fa fa-paw" aria-hidden="true"></i>Quản lý màu</a></li>
-                    <li><a href=""><i class="fa fa-id-card" aria-hidden="true"></i>Quản lý Tài Khoản</a></li>
-                    <li><a href=""><i class="fa fa-comments" aria-hidden="true"></i>Quản lý Bình luận</a></li>
-                </ul>
-            </div>
-            <div class="noidung">
-                
-                <div>
-                    <h2>Thêm sản phẩm mới</h2>
-                    
-                </div>
+        
+        <div class="nav-sidebar">
+            <ul>
+                <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                <li><a href="product.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Quản lý Sản Phẩm</a></li>
+                <li><a href="category.html"><i class="fa fa-th" aria-hidden="true"></i>Quản lý danh mục</a></li>
+                <li><a href="account.html"><i class="fa fa-file-invoice"></i>Quản lý hóa đơn</a></li>
+                <li><a href=""><i class="fa fa-id-card" aria-hidden="true"></i>Quản lý Tài Khoản</a></li>
+                <li><a href=""><i class="fa fa-comments" aria-hidden="true"></i>Quản lý Bình luận</a></li>
+            </ul>
+        </div>
+        <div class="noidung">
+            <div>
+                <h2>Thêm sản phẩm mới</h2>
+                <form id="fraddproduct" action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="sp_name" class="label-form">Tên sản phẩm:</label>
+                        <input type="text" name="prod_name" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label for="sp_price" class="label-form">Giá:</label>
+                            <input type="number" name="prod_price" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="sp_quantity" class="label-form">Số lượng:</label>
+                            <input type="number" name="prod_quantity" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Ảnh đại diện:</label><br>
+                        <input type="file" name="prod_img" id="sp_img" hidden>
+                        <img id="anhsanpham" src="../vendor/img/default_image.jpg" alt="ảnh sản phẩm" width="300px">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="" class="label-form">Nhà sản xuất:</label>
+                            <select name="pro_factory" class="form-control">
+                                <option value="1">Asus</option>
+                                <option value="2">Dell</option>
+                                <option value="3">Acer</option>
+                                <option value="4">HP</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="" class="label-form">Loại sản phẩm:</label>
+                            <select name="pro_category" class="form-control">
+                                <option value="1">Điện thoại</option>
+                                <option value="2">Laptop</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Bảo hành:</label>
+                        <input type="text" name="prod_warranty" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Mô tả:</label>
+                        <textarea name="prod_describe" id="sp_describe" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Thông số:</label>
+                        <textarea name="prod_tech" id="sp_tech" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="" class="label-form">CPU:</label>
+                        <input type="text" name="prod_CPU" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Màn hình:</label>
+                        <input type="text" name="prod_screen" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">RAM:</label>
+                        <input type="text" name="prod_RAM" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Card đồ họa:</label>
+                        <input type="text" name="prod_card" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Ổ cứng:</label>
+                        <input type="text" name="prod_disk" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Trọng lượng:</label>
+                        <input type="text" name="prod_weight" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="label-form">Size:</label>
+                        <input type="text" name="prod_weight" class="form-control">
+                    </div> -->
+                    <div class="form-group text-center">
+                        <a href="product.html" class="btn btn-secondary">Thoát</a>
+                        <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </body>
 <script src="../vendor/jquery-3.6.0.min.js"></script>
 <script src="../vendor/popper.min.js"></script>
+<script src="../vendor/ckeditor/ckeditor.js"></script>
 <script src="../vendor/bootstrap-4.6.0-dist/js/bootstrap.js"></script>
 <script src="https://kit.fontawesome.com/ef4a4b3f41.js" crossorigin="anonymous"></script>
+<script>
+    CKEDITOR.replace('sp_describe');
+
+    const reader = new FileReader();
+    const fileInput = document.getElementById("sp_img");
+    const img = document.getElementById("anhsanpham");
+    reader.onload = e => {
+      img.src = e.target.result;
+    }
+    fileInput.addEventListener('change', e => {
+      const f = e.target.files[0];
+      reader.readAsDataURL(f);
+    })
+
+    $(document).ready(function(){
+        $('#anhsanpham').click(function() {
+            $('#sp_img').click();
+        })
+    })
+</script>
 </html>

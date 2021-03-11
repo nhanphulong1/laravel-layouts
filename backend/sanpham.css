@@ -11,6 +11,8 @@
     margin-top: 30px;
     background-color: white;
     padding: 15px;
+    overflow: visible;
+    max-height: inherit;
 }
 
 .noidung>div>a{

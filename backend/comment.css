@@ -20,10 +20,11 @@
     margin-bottom: 10px;
 }
 
-#tbsanpham>tbody>tr>td{
-    vertical-align: middle!important;
+#command{
+    width: 440px;  
 }
 
-.img-sanpham{
-    height: 80px;
+table>tbody>tr>.noidungcm>p{
+    height: 50px; 
+    overflow: hidden;
 }

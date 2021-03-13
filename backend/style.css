@@ -57,7 +57,7 @@ body{
     width: 16.5%;
     background-color: white;
     float: left;
-    height: 100vh;
+    height: 120vh;
 }
 
 .nav-sidebar>ul{
@@ -71,7 +71,7 @@ body{
     color: #444444;
     font-size: 18px;
     display: block;
-    padding: 12px;
+    padding: 20px 12px;
     /* border-bottom: 1px solid lightgray; */
 }
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../vendor/bootstrap-4.6.0-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../vendor/DataTables/datatables.min.css"/>
-    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="comment.css">
     <link rel="stylesheet" href="style.css">
     <title>DashBoard</title>
 </head>
@@ -38,42 +38,31 @@
             <div class="noidung">
                 
                 <div>
-                    <h2>Quản lý tài khoản</h2>
-                    <a href="addaccount.html" class="btn btn-primary">Tạo tài khoản</a>
+                    <h2>Quản lý bình luận</h2>
                     <table id="tbsanpham" width="100%" class="text-center table table-hover">
                         <thead>
                             <tr >
                                 <th>STT</th>
-                                <th>Email</th>
-                                <th>Họ tên</th>
-                                <th>Số điện thoại</th>
-                                <th>Địa chỉ</th>
-                                <th>Loại</th>
+                                <th>Tên</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Thời gian</th>
+                                <th>Đánh giá</th>
+                                <th id="command">Nội dung</th>
                                 <th>Hành động</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>dvnhan123456@gmail.com</td>
-                                <td>Đào Văn Nhân</td>
-                                <td>0123456789</td>
-                                <td>Phú Long - Châu Thành - Đồng Tháp</td>
-                                <td>admin</td>
-                                <td>
-                                    <a href="#" class="btn btn-warning">Cập nhật</a>
-                                    <a href="#" class="btn btn-danger">Xóa</a>
+                                <td>dvnhan</td>
+                                <td>Iphone 12 pro max</td>
+                                <td>03/12/2021</td>
+                                <td>5</td>
+                                <td class="noidungcm">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet enim tortor at auctor urna nunc id cursus metus. Congue quisque egestas diam in arcu cursus euismod quis viverra. Ac feugiat sed lectus vestibulum. Et netus et malesuada fames ac. Morbi leo urna molestie at elementum eu facilisis sed odio. Porttitor leo a diam sollicitudin tempor id eu. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Amet nulla facilisi morbi tempus iaculis urna id. Elementum eu facilisis sed odio morbi quis commodo odio. Congue mauris rhoncus aenean vel elit. Enim nunc faucibus a pellentesque sit amet porttitor. Elementum tempus egestas sed sed risus pretium. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Elementum nisi quis eleifend quam adipiscing. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.</p>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>nguyenhungthuan123456@gmail.com</td>
-                                <td>Nguyen Hung Thuan</td>
-                                <td>0291648113</td>
-                                <td>Ktx-B DHCT, phường Xuân Khánh - quận Ninh Kiều - Tp Cần Thơ</td>
-                                <td>khách</td>
                                 <td>
-                                    <a href="#" class="btn btn-warning">Cập chật</a>
+                                    <a href="" class="btn btn-success">Duyệt</a>
                                     <a href="#" class="btn btn-danger">Xóa</a>
                                 </td>
                             </tr>

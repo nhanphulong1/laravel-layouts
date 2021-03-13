@@ -14,16 +14,3 @@
     overflow: visible;
     max-height: inherit;
 }
-
-.noidung>div>a{
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-#tbsanpham>tbody>tr>td{
-    vertical-align: middle!important;
-}
-
-.img-sanpham{
-    height: 80px;
-}

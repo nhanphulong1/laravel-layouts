@@ -1,0 +1,25 @@
+.noidung h2{
+    background-color: rgba(28, 28, 32)!important;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: white;
+    transform: translateY(-80%);
+}
+
+.noidung>div{
+    margin-top: 30px;
+    background-color: white;
+    padding: 15px;
+    overflow: visible;
+    max-height: inherit;
+}
+
+.noidung>div>a{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#tbsanpham>tbody>tr>td{
+    vertical-align: middle!important;
+}
